@@ -1,6 +1,6 @@
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     let mut guesses_number: u32 = 0;
@@ -20,7 +20,7 @@ fn main() {
             }
         };
 
-        println!("You guessed {guess}.");
+        println!("You guessed {guess}");
 
         let guess: u64 = match guess.trim().parse() {
             Ok(num) => num,
